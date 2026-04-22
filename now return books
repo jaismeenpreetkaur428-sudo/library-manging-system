@@ -1,0 +1,9 @@
+# return books
+def return_books():
+    name=input("enter the books name:")
+    if name in issued_books:
+        issued_books.remove(name)
+        books.append(name)
+        print("book returned")
+    else:
+            print("book not issued")
